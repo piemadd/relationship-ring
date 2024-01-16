@@ -1,0 +1,18 @@
+{
+  "name": "relationship-ring",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host --port 3000",
+    "build": "vite build",
+    "preview": "vite preview --host --port 3000",
+    "ingest": "node ./publuc/process.js"
+  },
+  "devDependencies": {
+    "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "d3": "^7.8.5"
+  }
+}
