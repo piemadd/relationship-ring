@@ -1,6 +1,6 @@
 import * as fs from 'fs'
 
-let raw = JSON.parse(fs.readFileSync('./data/raw.json', 'utf8'));
+let raw = JSON.parse(fs.readFileSync('./public/raw.json', 'utf8'));
 
 let links = {};
 let finalData = {
@@ -50,5 +50,5 @@ Object.keys(links).forEach((link) => {
   })
 })
 
-fs.writeFileSync('./data/full.json', JSON.stringify(finalData));
-fs.writeFileSync('./data/stripped.json', JSON.stringify(strippedData));
+fs.writeFileSync('./public/full.json', JSON.stringify(finalData));
+fs.writeFileSync('./public/stripped.json', JSON.stringify(strippedData));
